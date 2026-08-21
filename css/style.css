@@ -160,13 +160,13 @@
   }
   
   .card1 .thumb{background-image: url(/images/img3.png);}
-  .card2 .thumb{background-image: url(/images/img1.png);}
+  .card2 .thumb{background-image: url(/images/img1.png); background-position: center;}
   .card3 .thumb{background-image: url(/images/img7.png);}
   .card4 .thumb{background-image: url(/images/img2.png);}
   .card5 .thumb{background-image: url(/images/img8.png);}
   .card6 .thumb{background-image: url(/images/img4.png);}
   .card7 .thumb{background-image: url(/images/img6.png);}
-  .card8 .thumb{background-image: url(/images/img8.png);}
+  .card8 .thumb{background-image: url(/images/img9.png); background-position: center;}
   .card9 .thumb{background-image: url(/images/img5.png);}
 
   .thumb b{ color:var(--ink); display:block; font-family:'Inter'; font-size:13px; margin-bottom:4px; }
@@ -221,6 +221,102 @@
     border-radius:4px;
   }
 
+  /* 푸터 영역 정렬 */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px dashed #e5e7eb;
+}
+
+/* Live Site 강조 버튼 */
+.live-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 30px 8px 16px;
+  background-color: #10b981; /* 포인트 초록색 */
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 9999px; /* 알약 형태 */
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+  transition: all 0.3s ease;
+}
+
+.live-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 18px;
+    aspect-ratio: 1;
+    background: url(/images/arrow.png) no-repeat center / 100% auto;
+}
+/* 초록색 펄스(Pulse) 점 효과 */
+.live-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.live-dot::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: pulse 1.8s infinite ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* 호버 시 버튼 모션 */
+.live-link:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.35);
+}
+
+.live-link:hover .icon {
+  transform: translate(2px, -2px);
+}
+
+.live-link .icon {
+  transition: transform 0.2s ease;
+}
+
+/* 보조 버튼 (상세보기) */
+.arrow {
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.arrow:hover {
+  color: #111827;
+}
+
+/* 
   .card-footer{
     display:flex;
     justify-content:space-between;
@@ -245,7 +341,7 @@
   .live-link.none{ color:var(--muted); }
   .live-link.none::before{ background:var(--muted); }
   .live-link:hover{ color:var(--accent); }
-  .arrow{ font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); }
+  .arrow{ font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); } */
 
   footer{
     text-align:center;
