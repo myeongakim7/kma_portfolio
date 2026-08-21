@@ -159,15 +159,15 @@
     border-bottom:1px solid var(--line);
   }
   
-  .card1 .thumb{background-image: url(/images/img3.png);}
-  .card2 .thumb{background-image: url(/images/img1.png); background-position: center;}
-  .card3 .thumb{background-image: url(/images/img7.png);}
-  .card4 .thumb{background-image: url(/images/img2.png);}
-  .card5 .thumb{background-image: url(/images/img8.png);}
-  .card6 .thumb{background-image: url(/images/img4.png);}
-  .card7 .thumb{background-image: url(/images/img6.png);}
-  .card8 .thumb{background-image: url(/images/img9.png); background-position: center;}
-  .card9 .thumb{background-image: url(/images/img5.png);}
+  .card1 .thumb{background-image: url(../images/img3.png);}
+  .card2 .thumb{background-image: url(../images/img1.png); background-position: center;}
+  .card3 .thumb{background-image: url(../images/img7.png);}
+  .card4 .thumb{background-image: url(../images/img2.png);}
+  .card5 .thumb{background-image: url(../images/img8.png);}
+  .card6 .thumb{background-image: url(../images/img4.png);}
+  .card7 .thumb{background-image: url(../images/img6.png);}
+  .card8 .thumb{background-image: url(../images/img9.png); background-position: center;}
+  .card9 .thumb{background-image: url(../images/img5.png);}
 
   .thumb b{ color:var(--ink); display:block; font-family:'Inter'; font-size:13px; margin-bottom:4px; }
 
